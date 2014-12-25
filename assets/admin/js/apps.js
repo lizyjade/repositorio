@@ -642,7 +642,7 @@ $(document).ready(function(){
                     className: 'btn-danger'
                 },
                 success: {
-                    label: 'Yes',
+                    label: 'Si',
                     className: 'btn-success',
                     callback: function() {
                         window.location = 'page-lock-screen.html';
@@ -657,9 +657,9 @@ $(document).ready(function(){
         // Add sound
         ion.sound.play('camera_flashing');
         bootbox.dialog({
-            message: 'Do you want to exit from Blankon?',
-            title: 'Logout',
-            className: 'modal-danger modal-center',
+            message: '¿Quieres salir?',
+            title: 'Cerrar session',
+            className: 'modal-primary modal-center',
             buttons: {
                 danger: {
                     label: 'No',
@@ -669,7 +669,7 @@ $(document).ready(function(){
                     label: 'Yes',
                     className: 'btn-success',
                     callback: function() {
-                        window.location = 'page-signin.html';
+                        window.location = '../menu/salir.php';
                     }
                 }
             }
